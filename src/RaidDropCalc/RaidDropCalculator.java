@@ -266,23 +266,24 @@ public class RaidDropCalculator extends Application implements EventHandler<Acti
 
     public static ObservableList<Chance> raidCalc(double totalPoints)
     {
+        double m1 = totalPoints / 7125.0;
         ObservableList<Chance> retList = FXCollections.observableArrayList(
-                new Chance(String.format("%2.4f %%", totalPoints / 7125.0)),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (20.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (20.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (5.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (5.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (5.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (4.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (4.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (3.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (3.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (3.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (3.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (3.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (2.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (2.0 / 84.0))),
-                new Chance(String.format("%2.4f %%", (totalPoints / 7125.0) * (2.0 / 84.0))));
+                new Chance(String.format("%2.4f %%", m1)),
+                new Chance(String.format("%2.4f %%", (m1) * (20.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (20.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (5.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (5.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (5.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (4.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (4.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (3.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (3.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (3.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (3.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (3.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (2.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (2.0 / 84.0))),
+                new Chance(String.format("%2.4f %%", (m1) * (2.0 / 84.0))));
 
         return retList;
     }

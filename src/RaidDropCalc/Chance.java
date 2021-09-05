@@ -1,6 +1,5 @@
 package RaidDropCalc;
 
-
 import javafx.beans.property.SimpleStringProperty;
 
 public class Chance
